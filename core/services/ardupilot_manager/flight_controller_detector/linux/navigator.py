@@ -24,7 +24,6 @@ class Navigator(LinuxFlightController):
 
 class NavigatorPi5(Navigator):
     devices = {
-      
         "BME280": (0x76, 1),
         "PCA9685": (0x40, 3),
     }
@@ -45,7 +44,6 @@ class NavigatorPi5(Navigator):
 
 class NavigatorPi4(Navigator):
     devices = {
-     
         "BME280": (0x76, 1),
         "PCA9685": (0x40, 4),
     }
