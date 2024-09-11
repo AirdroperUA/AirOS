@@ -27,7 +27,7 @@ class NavigatorPi5(Navigator):
         "ADS1115": (0x48, 1),
         # "AK09915": (0x0D, 1),
         "BME280": (0x76, 1),
-        "PCA9685": (0x70, 3),
+        "PCA9685": (0x0C, 3),
     }
 
     def get_serials(self) -> List[Serial]:
@@ -49,7 +49,7 @@ class NavigatorPi4(Navigator):
         "ADS1115": (0x48, 1),
         # "AK09915": (0x0D, 1),
         "BME280": (0x76, 1),
-        "PCA9685": (0x70, 4),
+        "PCA9685": (0x0C, 4),
     }
 
     def get_serials(self) -> List[Serial]:
