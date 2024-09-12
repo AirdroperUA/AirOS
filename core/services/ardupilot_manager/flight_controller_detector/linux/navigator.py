@@ -47,7 +47,7 @@ class NavigatorPi5(Navigator):
 class NavigatorPi4(Navigator):
     devices = {
         "ADS1115": (0x48, 1),
-        "QMC5883L": (0x36, 0),
+        "AK09915": (0x36, 0),
         "BME280": (0x76, 1),
         "PCA9685": (0x40, 4),
     }
