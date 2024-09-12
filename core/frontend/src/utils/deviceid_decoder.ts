@@ -23,7 +23,7 @@ enum COMPASS_TYPE {
   IST8310 = 0x0A,
   ICM20948 = 0x0B,
   MMC3416 = 0x0C,
-  QMC5883L = 0x15,
+  QMC5883L = 0x0D,
   MAG3110 = 0x0E,
   SITL = 0x0F,
   IST8308 = 0x10,
@@ -31,7 +31,7 @@ enum COMPASS_TYPE {
   RM3100_2 = 0x12,
   MMC5883 = 0x13,
   AK09918 = 0x14,
-  AK09915 = 0x0D,
+  AK09915 = 0x36,
 }
 
 enum IMU_TYPE {
