@@ -28,7 +28,6 @@ class NavigatorPi5(Navigator):
         "AK09915": (0x36, 1),
         "BME280": (0x76, 1),
         "PCA9685": (0x40, 3),
-        # 
     }
 
     def get_serials(self) -> List[Serial]:
