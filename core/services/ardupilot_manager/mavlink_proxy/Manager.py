@@ -7,16 +7,17 @@ from loguru import logger
 # Plugins
 # pylint: disable=unused-import
 import mavlink_proxy.MAVLinkRouter
+import mavlink_proxy.MAVLinkServer
 import mavlink_proxy.MAVP2P
 import mavlink_proxy.MAVProxy
-from exceptions import (
+from mavlink_proxy.AbstractRouter import AbstractRouter
+from mavlink_proxy.Endpoint import Endpoint
+from mavlink_proxy.exceptions import (
     EndpointCreationFail,
     EndpointDeleteFail,
     EndpointUpdateFail,
     NoMasterMavlinkEndpoint,
 )
-from mavlink_proxy.AbstractRouter import AbstractRouter
-from mavlink_proxy.Endpoint import Endpoint
 
 
 class Manager:
@@ -124,12 +125,12 @@ class Manager:
         try:
             endpoints = self.endpoints()
             master_endpoint = self.master_endpoint
-            await self.tool.exit()
+            await self.stop()
             self.tool = AbstractRouter.get_interface(router_name)()
             for endpoint in endpoints:
                 self.tool.add_endpoint(endpoint)
             if master_endpoint:
-                await self.tool.start(master_endpoint)
+                await self.start(master_endpoint)
         except Exception as error:
             logger.error(f"Failed to set preferred router to {router_name}. {error}")
 

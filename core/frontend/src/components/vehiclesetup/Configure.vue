@@ -15,6 +15,7 @@
           {{ page.title }}
         </v-tab>
       </v-tabs>
+      <not-safe-overlay />
       <v-tabs-items :value="currentSubtab">
         <v-tab-item
           v-for="page in filtered_pages"
@@ -33,12 +34,14 @@
 <script lang="ts">
 import Vue from 'vue'
 
+import NotSafeOverlay from '@/components/common/NotSafeOverlay.vue'
 import VehicleInfo from '@/components/vehiclesetup/overview/VehicleInfo.vue'
 import VehicleViewer from '@/components/vehiclesetup/viewers/VehicleViewer.vue'
 import autopilot from '@/store/autopilot_manager'
 
 import SpinningLogo from '../common/SpinningLogo.vue'
 import ArdupilotAccelerometerSetup from './configuration/accelerometer/ArdupilotAccelerometerSetup.vue'
+import Camera from './configuration/camera.vue'
 import ArdupilotMavlinkCompassSetup from './configuration/compass/ArdupilotMavlinkCompassSetup.vue'
 import FailsafesConfigration from './configuration/failsafes/Failsafes.vue'
 import LightsConfigration from './configuration/lights.vue'
@@ -74,6 +77,8 @@ export default Vue.extend({
     GyroCalib,
     BaroCalib,
     FailsafesConfigration,
+    Camera,
+    NotSafeOverlay,
   },
   data() {
     return {
@@ -90,6 +95,7 @@ export default Vue.extend({
           filter: () => autopilot.vehicle_type === 'Submarine',
         },
         { title: 'Failsafes', value: 'failsafes', component: FailsafesConfigration },
+        { title: 'Camera Gimbal', value: 'camera', component: Camera },
       ] as Item[],
     }
   },
