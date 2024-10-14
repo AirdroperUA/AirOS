@@ -5,6 +5,8 @@
 COCKPIT_RELEASE_URL="https://api.github.com/repos/bluerobotics/cockpit/releases/latest"
 MAJOR_TOM_RELEASE_URL="https://blueos.cloud/major_tom/install"
 
+alias curl="curl --retry 6 --max-time 15 --retry-all-errors --retry-delay 20 --connect-timeout 60"
+
 response=$(curl -fsSL $COCKPIT_RELEASE_URL)
 
 if [[ $response =~ \"tag_name\":\ *\"([^\"]+)\" ]]; then
@@ -15,7 +17,7 @@ else
   exit 1
 fi
 
-major_tom_install_data=$(curl -fsSL $MAJOR_TOM_RELEASE_URL)
+major_tom_install_data=$(curl -fsSL --connect-timeout 60 --max-time 60 --retry 5 --retry-delay 20 $MAJOR_TOM_RELEASE_URL)
 
 if [[ $major_tom_install_data =~  \"docker\":\ *\"([^\"]+)\" ]]; then
   major_tom_docker="${BASH_REMATCH[1]}"

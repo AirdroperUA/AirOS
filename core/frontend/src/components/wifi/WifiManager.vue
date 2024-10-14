@@ -255,15 +255,15 @@ export default Vue.extend({
       await back_axios({
         method: 'post',
         url: `${wifi.API_URL}/hotspot`,
-        params: { enable: !wifi.hotspot_status },
+        params: { enable: !this.hotspot_status },
         timeout: 20000,
       })
         .then(() => {
           notifier.pushSuccess('HOTSPOT_STATUS_TOGGLE_SUCCESS', 'Successfully toggled hotspot state.')
         })
         .catch((error) => {
-          wifi.setHotspotStatus(null)
           notifier.pushBackError('HOTSPOT_STATUS_TOGGLE_FAIL', error, true)
+          this.hotspot_status_loading = false
         })
     },
   },
