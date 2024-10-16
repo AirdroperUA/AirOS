@@ -154,7 +154,6 @@ import Vue from 'vue'
 
 import ParameterEditorDialog from '@/components/parameter-editor/ParameterEditorDialog.vue'
 import MotorDetection from '@/components/vehiclesetup/MotorDetection.vue'
-import VehicleViewer from '@/components/vehiclesetup/viewers/VehicleViewer.vue'
 import {
   MavModeFlag,
 } from '@/libs/MAVLink2Rest/mavlink2rest-ts/messages/mavlink2rest-enum'

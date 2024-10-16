@@ -63,56 +63,7 @@ export default Vue.extend({
     },
     openGitHub(): void {
       window.open('https://github.com/AirdroperUA/bug_report/issues/new', '_blank')
-    },
-    openDiscuss(): void {
-      window.open(this.discussUrl(), '_blank')
-    },
-    async openSimpleReport(): Promise<void> {
-      // @ts-expect-error - Theme is not defined in the type
-      const { isDark, currentTheme } = this.$vuetify.theme
-
-      const theme = {
-        background: currentTheme.sheet_bg,
-        foreground: currentTheme.sheet_bg_complement,
-        accentBackground: currentTheme.br_blue,
-        accentForeground: currentTheme.sheet_bg,
-        successColor: currentTheme.success,
-        errorColor: currentTheme.error,
-        border: `1.5px solid ${currentTheme.sheet_bg_complement}26`, // 15% opacity
-        interactiveFilter: `brightness(${isDark ? '150' : '95'}%)`,
-      }
-
-      const feedback = Sentry.feedbackIntegration({
-        colorScheme: 'system',
-        showBranding: false,
-        formTitle: 'Send us a simple report',
-        submitButtonLabel: 'Send Report',
-        messagePlaceholder: 'What\'s the bug? What did you expect? What feedback do you have?',
-        themeLight: theme,
-        themeDark: theme,
-      })
-
-      const form = await feedback.createForm()
-      form.appendToDom()
-
-      this.show_dialog = false
-      form.open()
-    },
-    discussUrl(): string {
-      const url = new URL('https://discuss.bluerobotics.com')
-      url.pathname = '/new-topic'
-
-      const parameters = {
-        title: 'AirOS feedback - (Please add a title here)',
-        body: 'AirOS Version: (You can check on the bottom of the main menu)\n- - -\nFeedback content',
-        category_id: 85,
-        tags: ['frontend'],
-      }
-
-      Object.entries(parameters).forEach(([name, value]) => url.searchParams.set(name, value.toString()))
-
-      return url.href
-    },
+    }
   },
 })
 </script>

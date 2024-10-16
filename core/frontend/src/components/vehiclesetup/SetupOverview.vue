@@ -37,8 +37,6 @@ import Vue from 'vue'
 
 import OnboardSensors from '@/components/vehiclesetup/overview/OnboardSensors.vue'
 import VehicleInfo from '@/components/vehiclesetup/overview/VehicleInfo.vue'
-import VehicleViewer from '@/components/vehiclesetup/viewers/VehicleViewer.vue'
-
 import GripperInfo from './overview/gripper.vue'
 import LeakInfo from './overview/LeakInfo.vue'
 import LightsInfo from './overview/LightsInfo.vue'

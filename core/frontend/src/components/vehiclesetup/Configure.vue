@@ -36,7 +36,6 @@ import Vue from 'vue'
 
 import NotSafeOverlay from '@/components/common/NotSafeOverlay.vue'
 import VehicleInfo from '@/components/vehiclesetup/overview/VehicleInfo.vue'
-import VehicleViewer from '@/components/vehiclesetup/viewers/VehicleViewer.vue'
 import autopilot from '@/store/autopilot_manager'
 
 import SpinningLogo from '../common/SpinningLogo.vue'
