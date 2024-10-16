@@ -47,7 +47,6 @@
 </template>
 
 <script lang="ts">
-import * as Sentry from '@sentry/vue'
 import Vue from 'vue'
 
 export default Vue.extend({
@@ -63,7 +62,7 @@ export default Vue.extend({
     },
     openGitHub(): void {
       window.open('https://github.com/AirdroperUA/bug_report/issues/new', '_blank')
-    }
+    },
   },
 })
 </script>

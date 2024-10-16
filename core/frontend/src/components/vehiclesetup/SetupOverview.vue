@@ -34,7 +34,6 @@
 
 <script lang="ts">
 import Vue from 'vue'
-
 import OnboardSensors from '@/components/vehiclesetup/overview/OnboardSensors.vue'
 import VehicleInfo from '@/components/vehiclesetup/overview/VehicleInfo.vue'
 import GripperInfo from './overview/gripper.vue'
