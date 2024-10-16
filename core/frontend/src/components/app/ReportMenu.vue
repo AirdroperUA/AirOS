@@ -47,6 +47,7 @@
 </template>
 
 <script lang="ts">
+import * as Sentry from '@sentry/vue'
 import Vue from 'vue'
 
 export default Vue.extend({
