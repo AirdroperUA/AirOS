@@ -39,34 +39,6 @@
               </v-icon>
               With GitHub
             </v-btn>
-
-            <v-btn
-              v-tooltip="'Directly send us a feedback'"
-              class="ma-2"
-              @click="openSimpleReport"
-            >
-              <v-icon
-                left
-                size="20"
-              >
-                mdi-message-text
-              </v-icon>
-              With Simple Report
-            </v-btn>
-
-            <v-btn
-              v-tooltip="'Discuss ideas with the community'"
-              class="ma-2"
-              @click="openDiscuss()"
-            >
-              <v-icon
-                left
-                size="16"
-              >
-                $si-discourse
-              </v-icon>
-              On Airdroper forum
-            </v-btn>
           </v-card-actions>
         </v-container>
       </v-card>
@@ -90,7 +62,7 @@ export default Vue.extend({
       this.show_dialog = state
     },
     openGitHub(): void {
-      window.open('https://github.com/AirdroperUA/AirOS/issues/new/choose', '_blank')
+      window.open('https://github.com/AirdroperUA/bug_report/issues/new', '_blank')
     },
     openDiscuss(): void {
       window.open(this.discussUrl(), '_blank')

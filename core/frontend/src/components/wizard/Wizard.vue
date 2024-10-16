@@ -547,7 +547,7 @@ export default Vue.extend({
     },
     setupROV() {
       this.vehicle_type = Vehicle.Sub
-      this.vehicle_name = 'BlueROV'
+      this.vehicle_name = 'FrameV2'
       this.vehicle_image = '/assets/vehicles/images/bluerov2.png'
       this.step_number += 1
 

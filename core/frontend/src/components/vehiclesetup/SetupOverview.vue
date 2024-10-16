@@ -49,7 +49,6 @@ import VideoOverview from './overview/VideoOverview.vue'
 export default Vue.extend({
   name: 'SetupOverview',
   components: {
-    VehicleViewer,
     OnboardSensors,
     VehicleInfo,
     GripperInfo,

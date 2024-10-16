@@ -372,7 +372,6 @@
     <wifi-updater />
     <mavlink-updater />
     <new-version-notificator />
-    <Wizard />
     <alerter />
     <VTour
       name="welcomeTour"

@@ -63,7 +63,6 @@ export interface Item {
 export default Vue.extend({
   name: 'Configure',
   components: {
-    VehicleViewer,
     VehicleInfo,
     GripperInfo,
     PowerInfo,

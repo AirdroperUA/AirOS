@@ -201,7 +201,6 @@ export default Vue.extend({
   components: {
     ParameterEditorDialog,
     ParameterSwitch,
-    VehicleViewer,
     MotorDetection,
   },
   data() {
