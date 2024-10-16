@@ -5,7 +5,7 @@ This folder contains all necessary files for configuration of the host computer 
 To use it, just run the installation script in your terminal **as root**, like so:
 
 ```bash
-sudo su -c 'curl -fsSL https://raw.githubusercontent.com/bluerobotics/blueos-docker/master/install/install.sh | bash'
+sudo su -c 'curl -fsSL https://raw.githubusercontent.com/AirdroperUA/AirOS/master/install/install.sh | bash'
 ```
 
 # Using different versions or custom builds

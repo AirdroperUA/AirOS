@@ -26,7 +26,7 @@ from api.manager import (
 
 SERVICE_NAME = "cable-guy"
 
-parser = argparse.ArgumentParser(description="CableGuy service for Blue Robotics AirOS")
+parser = argparse.ArgumentParser(description="CableGuy service for Airdroper AirOS")
 parser.add_argument(
     "--default_config",
     dest="default_config",

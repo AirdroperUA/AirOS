@@ -294,7 +294,7 @@ def update_dwc2() -> bool:
 
 
 def update_navigator_overlays() -> bool:
-    logger.info("Running Navigator overlays update..")
+    logger.info("Running CORE overlays update..")
 
     if config_file is None:
         logging.warning("config.txt not found. skipping overlays update")

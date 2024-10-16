@@ -74,14 +74,14 @@ const power_modules_list = [
     ampOffset: 0,
   },
   {
-    text: 'Blue Robotics Power Sense Module',
+    text: 'Airdroper Power Sense Module',
     voltPin: 2,
     currPin: 3,
     voltMult: 11.000,
     ampPerVolt: 37.8788,
     ampOffset: 0.330,
   }, {
-    text: 'Navigator w/ Blue Robotics Power Sense Module',
+    text: 'CORE w/ Airdroper Power Sense Module',
     voltPin: 5,
     currPin: 4,
     voltMult: 11.000,

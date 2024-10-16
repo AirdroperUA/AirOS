@@ -65,7 +65,7 @@
               >
                 $si-discourse
               </v-icon>
-              On Blue Robotics forum
+              On Airdroper forum
             </v-btn>
           </v-card-actions>
         </v-container>
@@ -90,7 +90,7 @@ export default Vue.extend({
       this.show_dialog = state
     },
     openGitHub(): void {
-      window.open('https://github.com/bluerobotics/blueos-docker/issues/new/choose', '_blank')
+      window.open('https://github.com/AirdroperUA/AirOS/issues/new/choose', '_blank')
     },
     openDiscuss(): void {
       window.open(this.discussUrl(), '_blank')

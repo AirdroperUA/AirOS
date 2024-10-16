@@ -15,13 +15,13 @@
       >
         <h3>Welcome to AirOS!</h3>
         Before you start, we highly recommend <a
-          href="https://docs.bluerobotics.com/ardusub-zola/software/onboard/BlueOS-1.0/getting-started/#connect-wifi"
+          href="https://docs.airdroper.org/ardusub-zola/software/onboard/BlueOS-1.0/getting-started/#connect-wifi"
           target="_blank"
         >
           connecting to the internet
         </a>
         and performing a <a
-          href="https://docs.bluerobotics.com/ardusub-zola/software/onboard/BlueOS-1.0/getting-started/#select-version"
+          href="https://docs.airdroper.org/ardusub-zola/software/onboard/BlueOS-1.0/getting-started/#select-version"
           target="_blank"
         >
           system update to the latest available AirOS version

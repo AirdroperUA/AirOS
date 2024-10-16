@@ -93,7 +93,7 @@
         @click="goHome"
       >
         <v-img
-          alt="Blue Robotics Logo"
+          alt="Airdroper Logo"
           class="shrink mr-2"
           contain
           :src="blueos_logo"
@@ -355,10 +355,10 @@
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://bluerobotics.com"
+            href="https://airdroper.org"
             style="text-decoration:none;"
           >
-            Blue Robotics
+            Airdroper
           </a>
         </span>
       </v-container>

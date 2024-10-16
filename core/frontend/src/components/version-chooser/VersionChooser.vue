@@ -17,7 +17,7 @@
         >
           Turn on Pirate mode to view all available AirOS versions, including previous installs
           stored onboard, as well as past and current stable, beta, and development releases
-          downloadable from Blue Robotics.
+          downloadable from Airdroper.
         </v-alert>
 
         <h2>Current Version</h2>

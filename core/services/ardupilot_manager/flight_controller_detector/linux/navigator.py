@@ -8,10 +8,10 @@ from typedefs import Platform, Serial
 
 
 class Navigator(LinuxFlightController):
-    manufacturer = "Blue Robotics"
+    manufacturer = "Airdroper"
 
     def __init__(self, **data: Any) -> None:
-        name = "Navigator"
+        name = "CORE"
         plat = Platform.Navigator
         if platform.machine() == "aarch64":
             name = "Navigator64"

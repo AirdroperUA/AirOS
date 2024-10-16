@@ -43,7 +43,7 @@
       </v-card-title>
       <v-card-text>
         <p>
-          These are the recommended parameter sets for your vehicle and firmware version. Curated by Blue Robotics
+          These are the recommended parameter sets for your vehicle and firmware version. Curated by Airdroper
         </p>
       </v-card-text>
       <v-card-actions>
