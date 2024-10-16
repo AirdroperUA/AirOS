@@ -26,7 +26,7 @@ from api.manager import (
 
 SERVICE_NAME = "cable-guy"
 
-parser = argparse.ArgumentParser(description="CableGuy service for Blue Robotics BlueOS")
+parser = argparse.ArgumentParser(description="CableGuy service for Blue Robotics AirOS")
 parser.add_argument(
     "--default_config",
     dest="default_config",
@@ -51,7 +51,7 @@ manager = EthernetManager(default_configs)
 
 app = FastAPI(
     title="Cable Guy API",
-    description="Cable Guy is responsible for managing internet interfaces on BlueOS.",
+    description="Cable Guy is responsible for managing internet interfaces on AirOS.",
     default_response_class=PrettyJSONResponse,
     debug=True,
 )

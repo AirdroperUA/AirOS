@@ -30,7 +30,7 @@
     >
       <v-container>
         <div class="justify-center">
-          It looks like you are reaching BlueOS via its wi-fi network. This can result in degraded performance.
+          It looks like you are reaching AirOS via its wi-fi network. This can result in degraded performance.
           <span
             v-if="available_wired_domain()"
             class="mt-3"
@@ -103,7 +103,7 @@ export default Vue.extend({
         return 'Connected through a wired connection'
       }
 
-      return 'It looks like you are reaching BlueOS using a complex network. '
+      return 'It looks like you are reaching AirOS using a complex network. '
         + 'Degraded performance can happen in this case.'
     },
   },
@@ -125,7 +125,7 @@ export default Vue.extend({
       }
       // GET errors cannot be suppressed in the console, so let's be transparent to the users about
       // why we are seeing them
-      console.log('Trying to find a wired link to BlueOS...')
+      console.log('Trying to find a wired link to AirOS...')
       for (const domain of this.wired_interface_domains) {
         back_axios({
           method: 'get',

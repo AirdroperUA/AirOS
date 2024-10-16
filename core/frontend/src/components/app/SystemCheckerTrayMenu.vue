@@ -106,7 +106,7 @@ export default Vue.extend({
       }
 
       return {
-        human_message: `BlueOS does not have access to the host computer.\n${human_message}.`,
+        human_message: `AirOS does not have access to the host computer.\n${human_message}.`,
         debug_message: JSON.stringify(output),
       }
     },

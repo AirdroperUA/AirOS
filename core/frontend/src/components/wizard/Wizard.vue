@@ -42,9 +42,9 @@
           <v-stepper-content step="0">
             <v-card class="ma-2 pa-5">
               <div class="welcome" style="display: flex; justify-content: center; align-items: center; width: 100%;">
-                Welcome to BlueOS!
+                Welcome to AirOS!
               </div>
-              Welcome to BlueOS!
+              Welcome to AirOS!
               In this setup wizard we will guide you through the initial configuration of your vehicle,
               including setting up the vehicle name, hostname, and <b>firmware</b>.
               If your vehicle is already set up, you can skip this wizard.
@@ -246,7 +246,7 @@
         </v-card-text>
         <v-card-actions class="justify-center pa-4">
           <v-btn
-            v-tooltip="'The wizard will show again during BlueOS usage'"
+            v-tooltip="'The wizard will show again during AirOS usage'"
             color="warning"
             @click="skipWizard()"
           >
@@ -254,7 +254,7 @@
           </v-btn>
           <v-spacer />
           <v-btn
-            v-tooltip="'The wizard will only show if BlueOS is updated and further configuration is necessary'"
+            v-tooltip="'The wizard will only show if AirOS is updated and further configuration is necessary'"
             color="error"
             @click="skipWizard(false)"
           >

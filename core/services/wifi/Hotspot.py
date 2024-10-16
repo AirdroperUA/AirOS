@@ -50,7 +50,7 @@ class HotspotManager:
         except Exception:
             dev_id = "000000"
         hashed_id = hashlib.md5(dev_id.encode()).hexdigest()[:6]
-        self._ap_ssid = ap_ssid or f"BlueOS ({hashed_id})"
+        self._ap_ssid = ap_ssid or f"AirOS ({hashed_id})"
 
         self._ap_passphrase = ap_passphrase or "blueosap"
 

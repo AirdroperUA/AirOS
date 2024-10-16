@@ -19,7 +19,7 @@ init_logger(SERVICE_NAME)
 
 app = FastAPI(
     title="Bridget API",
-    description="Bridget is a BlueOS service responsible for managing 'bridges' links.",
+    description="Bridget is a AirOS service responsible for managing 'bridges' links.",
     default_response_class=PrettyJSONResponse,
 )
 app.router.route_class = GenericErrorHandlingRoute

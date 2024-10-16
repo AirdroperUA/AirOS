@@ -5,7 +5,7 @@ import setuptools
 setuptools.setup(
     name="Bag of Holding",
     version="0.1.0",
-    description="Allow the persistence of arbitrary data in a Blue Robotics BlueOS system",
+    description="Allow the persistence of arbitrary data in a Blue Robotics AirOS system",
     license="MIT",
     install_requires=[
         "appdirs == 1.4.4",

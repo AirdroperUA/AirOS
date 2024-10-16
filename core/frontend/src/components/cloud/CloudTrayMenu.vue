@@ -97,7 +97,7 @@
             rel="noopener noreferrer"
             @click="() => {}"
           >
-            Go to BlueOS Cloud
+            Go to AirOS Cloud
           </v-btn>
           <v-container
             class="d-flex align-center py-0 my-0"

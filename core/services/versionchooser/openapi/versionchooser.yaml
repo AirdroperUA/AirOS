@@ -1,7 +1,7 @@
 openapi: "3.0.0"
 info:
   version: 1.0.0
-  title: BlueOS Version Chooser
+  title: AirOS Version Chooser
   license:
     name: MIT
 servers:
@@ -11,13 +11,13 @@ paths:
   /version/current:
     get:
       operationId: main.get_version
-      summary: Return the current running version of BlueOS
+      summary: Return the current running version of AirOS
       responses:
         '200':
-          description: The current running version of BlueOS
+          description: The current running version of AirOS
     post:
       operationId: main.set_version
-      summary: Sets the current version of BlueOS to a new tag
+      summary: Sets the current version of AirOS to a new tag
       responses:
         '200':
           description: Successfully set a new version
@@ -39,13 +39,13 @@ paths:
   /bootstrap/current:
     get:
       operationId: main.get_bootstrap_version
-      summary: Return the current running version of BlueOS-bootstrap
+      summary: Return the current running version of AirOS-bootstrap
       responses:
         '200':
-          description: The current running version of BlueOS-bootstrap
+          description: The current running version of AirOS-bootstrap
     post:
       operationId: main.set_bootstrap_version
-      summary: Sets the current version of BlueOS-bootstrap to a new tag
+      summary: Sets the current version of AirOS-bootstrap to a new tag
       responses:
         '200':
           description: Successfully set a new version
@@ -71,7 +71,7 @@ paths:
   /version/delete:
     delete:
       operationId: main.delete_version
-      summary: Delete the selected version of BlueOS
+      summary: Delete the selected version of AirOS
       responses:
         '200':
           description: Version as deleted successfully

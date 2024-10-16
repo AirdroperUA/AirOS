@@ -34,7 +34,7 @@
         v-if="holds_ip_being_used"
         class="text-center mt-2 mb-2"
       >
-        This IP address is currently being used to access BlueOS.
+        This IP address is currently being used to access AirOS.
         Deleting it could prevent you from accessing your vehicle. Are you sure you want to disconnect?
       </v-card-subtitle>
 

@@ -39,7 +39,7 @@
                 </v-list-item-content>
               </div>
             </template>
-            <span>This version is not compatible with current machine running BlueOS</span>
+            <span>This version is not compatible with current machine running AirOS</span>
           </v-tooltip>
         </template>
       </v-select>

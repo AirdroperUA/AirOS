@@ -13,13 +13,13 @@
         elevation="2"
         dismissible
       >
-        This vehicle is running its "factory" version of BlueOS.
+        This vehicle is running its "factory" version of AirOS.
         This generally means something went wrong, and the system reverted to this version
         in order to recover.
         Please file an issue at <a
           href="https://github.com/bluerobotics/BlueOS/issues"
           target="_blank"
-        >BlueOS/issues</a>
+        >AirOS/issues</a>
         or post on our <a
           href="https://discuss.bluerobotics.com/c/bluerobotics-software/blue-os/85"
           target="_blank"

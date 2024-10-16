@@ -16,7 +16,7 @@ from nmea_injector.TrafficController import NMEASocket, SocketKind, TrafficContr
 
 SERVICE_NAME = "nmea-injector"
 
-parser = argparse.ArgumentParser(description="NMEA Injector service for Blue Robotics BlueOS")
+parser = argparse.ArgumentParser(description="NMEA Injector service for Airdroper AirOS")
 parser.add_argument("-u", "--udp", type=int, help="change the default UDP input port")
 parser.add_argument("-t", "--tcp", type=int, help="change the default TCP input port")
 

@@ -16,7 +16,7 @@ RUNNING_IN_CI=0 # default to not running CI mode/docker-in-docker
 usage_help()
 {
     cat <<EOF
-BlueOS Installer
+AirOS Installer
 Usage: install.sh [options]
 
 Options:
@@ -227,7 +227,7 @@ docker create \
     $BLUEOS_BOOTSTRAP
 
 # add docker entry to rc.local
-sed -i "\%^exit 0%idocker start blueos-bootstrap" /etc/rc.local || echo "Failed to add docker start on rc.local, BlueOS will not start on boot!"
+sed -i "\%^exit 0%idocker start blueos-bootstrap" /etc/rc.local || echo "Failed to add docker start on rc.local, AirOS will not start on boot!"
 
 # Configure network settings
 ## This should be after everything, otherwise network problems can happen

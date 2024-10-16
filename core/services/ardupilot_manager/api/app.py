@@ -12,7 +12,7 @@ from api.v2.routers import index_router_v2
 
 application = FastAPI(
     title="AutoPilot Manager API",
-    description="AutoPilot Manager is responsible for managing AutoPilot devices connected to BlueOS.",
+    description="AutoPilot Manager is responsible for managing AutoPilot devices connected to AirOS.",
     default_response_class=PrettyJSONResponse,
     debug=True,  # TODO - Add debug after based on args
 )

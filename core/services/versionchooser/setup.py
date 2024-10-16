@@ -5,7 +5,7 @@ from setuptools import setup
 setup(
     name="versionchooser_service",
     version="0.1.0",
-    description="Blue Robotics Ardusub BlueOS Version Chooser",
+    description="Blue Robotics Ardusub AirOS Version Chooser",
     license="MIT",
     py_modules=[],
     install_requires=[

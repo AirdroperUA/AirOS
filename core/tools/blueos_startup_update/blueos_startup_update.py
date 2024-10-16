@@ -413,7 +413,7 @@ def main() -> int:
     current_git_version = os.getenv("GIT_DESCRIBE_TAGS")
     match = re.match(r"(?P<tag>.*)-(?P<commit_number>\d+)-(?P<commit_hash>[a-z0-9]+)", current_git_version)
     tag, commit_number, commit_hash = match["tag"], match["commit_number"], match["commit_hash"]
-    logger.info(f"Running BlueOS: {tag=}, {commit_number=}, {commit_hash=}")
+    logger.info(f"Running AirOS: {tag=}, {commit_number=}, {commit_hash=}")
     # pylint: disable=global-statement
     global config_file
     global cmdline_file

@@ -96,7 +96,7 @@
             </v-tab>
           </v-tabs>
           <span v-if="mode === 'server'">
-            Server mode will bind to the given port at the BlueOS device.
+            Server mode will bind to the given port at the AirOS device.
             This means it will receive data from the topside computer at port
             <B>{{ bridge.udp_listen_port }}</B>, and will send data back
             to the topside computer at the port where the data originated at the topside computer.

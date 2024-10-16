@@ -125,7 +125,7 @@
               height="200"
             >
           </div>
-          <span>Scan this QR code with your phone to connect to BlueOS's hotspot.</span>
+          <span>Scan this QR code with your phone to connect to AirOS's hotspot.</span>
         </v-card-text>
       </v-card>
     </v-dialog>

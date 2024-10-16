@@ -15,7 +15,7 @@
           type="info"
           elevation="2"
         >
-          Turn on Pirate mode to view all available BlueOS versions, including previous installs
+          Turn on Pirate mode to view all available AirOS versions, including previous installs
           stored onboard, as well as past and current stable, beta, and development releases
           downloadable from Blue Robotics.
         </v-alert>
@@ -83,7 +83,7 @@
         >
           <v-text-field
             v-model="selected_image"
-            name="BlueOS Remote Repository"
+            name="AirOS Remote Repository"
             label="Remote repository"
             :append-icon="selected_image != default_repository ? 'mdi-restore' : undefined"
             @click:append="selected_image = default_repository"

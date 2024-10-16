@@ -31,7 +31,7 @@ export default Vue.extend({
       this.backend_offline = frontend.backend_offline
       this.$emit('statusChange', this.backend_offline)
       if (this.backend_offline) {
-        const message = 'Could not communicate with BlueOS backend.'
+        const message = 'Could not communicate with AirOS backend.'
         notifier.pushError('BACKEND_OFFLINE', message)
       }
     },

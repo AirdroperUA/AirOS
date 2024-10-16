@@ -1,4 +1,4 @@
-# BlueOS Contributor Covenant Code of Conduct v1.0
+# AirOS Contributor Covenant Code of Conduct v1.0
 
 ## Our Pledge
 In the interest of fostering a welcoming environment, we believe in an open and inclusive community. This Code of Conduct outlines our expectations for all who participate in our project, as well as the steps to report unacceptable behavior. We are committed to providing a friendly, safe, and harassment-free environment for everyone.
@@ -27,7 +27,7 @@ Examples of unacceptable behavior by participants include:
 - Other conduct which could reasonably be considered inappropriate in a professional setting
 
 ## Our Responsibilities
-BlueOS maintainers, project participants, and contributors (collectively, “participants”) are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
+AirOS maintainers, project participants, and contributors (collectively, “participants”) are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
 
 As the primary project maintainer, Blue Robotics has the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
 

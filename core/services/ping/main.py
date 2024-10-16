@@ -24,7 +24,7 @@ init_logger(SERVICE_NAME)
 
 app = FastAPI(
     title="Ping Manager API",
-    description="Ping Manager is responsible for managing Ping devices connected to BlueOS.",
+    description="Ping Manager is responsible for managing Ping devices connected to AirOS.",
     default_response_class=PrettyJSONResponse,
     debug=True,
 )
@@ -77,7 +77,7 @@ async def sensor_manager() -> None:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Ping Service for Bluerobotics BlueOS")
+    parser = argparse.ArgumentParser(description="Ping Service for Airdroper AirOS")
     args = parser.parse_args()
 
     loop = asyncio.new_event_loop()

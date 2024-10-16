@@ -18,7 +18,7 @@ from api.v2.routers import (
 
 application = FastAPI(
     title="Kraken API",
-    description="Kraken is the BlueOS service responsible for installing and managing extensions.",
+    description="Kraken is the AirOS service responsible for installing and managing extensions.",
 )
 application.router.route_class = GenericErrorHandlingRoute
 

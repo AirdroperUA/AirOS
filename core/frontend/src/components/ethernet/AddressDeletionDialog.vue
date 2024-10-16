@@ -75,7 +75,7 @@ export default Vue.extend({
           + ' Deleting it could prevent you from accessing your vehicle. Are you sure you want to proceed?'
       }
       if (this.dialogType === 'ip-being-used') {
-        return 'The IP address is currently being used to access BlueOS.'
+        return 'The IP address is currently being used to access AirOS.'
           + ' Deleting it could prevent you from accessing your vehicle. Are you sure you want to proceed?'
       }
 
