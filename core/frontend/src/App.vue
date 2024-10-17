@@ -371,14 +371,8 @@
     <ethernet-updater />
     <wifi-updater />
     <mavlink-updater />
-    <new-version-notificator />
     <Wizard />
     <alerter />
-    <VTour
-      name="welcomeTour"
-      :steps="steps.filter((step) => step?.filter_wifi_connected !== wifi_connected)"
-      :callbacks="tourCallbacks"
-    />
   </v-app>
   <div v-else>
     <router-view />
@@ -401,7 +395,6 @@ import * as VCU from '@/utils/version_chooser'
 import Alerter from './components/app/Alerter.vue'
 import BackendStatusChecker from './components/app/BackendStatusChecker.vue'
 import InternetTrayMenu from './components/app/InternetTrayMenu.vue'
-import NewVersionNotificator from './components/app/NewVersionNotificator.vue'
 import PiradeModeTrayMenu from './components/app/PirateModeTrayMenu.vue'
 import PowerMenu from './components/app/PowerMenu.vue'
 import ReportMenu from './components/app/ReportMenu.vue'
@@ -449,7 +442,6 @@ export default Vue.extend({
     'backend-status-checker': BackendStatusChecker,
     Alerter,
     'vehicle-banner': VehicleBanner,
-    'new-version-notificator': NewVersionNotificator,
     SystemCheckerTrayMenu,
     VehicleRebootRequiredTrayMenu,
     Wizard: defineAsyncComponent(() => import('@/components/wizard/Wizard.vue')),
