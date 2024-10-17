@@ -498,9 +498,6 @@ export default Vue.extend({
     safe_mode(): boolean {
       return autopilot_data.is_safe
     },
-    wifi_connected(): boolean {
-      return wifi.current_network != null
-    },
     toolbar_height(): number {
       return settings.is_pirate_mode && this.backend_offline ? 66 : 56
     },
@@ -544,125 +541,6 @@ export default Vue.extend({
       ] as menuItem[]
 
       return [...filteredDefaultMenu, ...extensions].sort((a, b) => a.title.localeCompare(b.title))
-    },
-    steps() {
-      return [
-        {
-          target: '#tour-center-hook',
-          header: {
-            title: 'Welcome to AirOS!',
-          },
-          content: `We are happy to have you navigating with us! AirOS provides the
-          necessary tools to configure your vehicle, check the system status and more.
-          Follow this quick tour to get familiar with your brand new onboard system.`,
-          params: {
-            enableScrolling: false,
-          },
-        },
-        {
-          target: '#tour-center-hook',
-          content: 'Connect AirOS to the internet to enable online functionalities.',
-          filter_wifi_connected: true,
-          params: {
-            enableScrolling: false,
-          },
-        },
-        {
-          target: '#wifi-tray-menu-button',
-          content: 'You can do this by connecting to a wifi network...',
-          filter_wifi_connected: true,
-          params: {
-            enableScrolling: false,
-          },
-        },
-        {
-          target: '#ethernet-tray-menu-button',
-          content: '..or connecting to a wired Ethernet connection (usually from a router).',
-          filter_wifi_connected: true,
-          params: {
-            enableScrolling: false,
-          },
-        },
-        {
-          target: '#button-to-vehicle',
-          content: 'This is the main AirOS menu. Here you can access all the running services and system utilities.',
-          params: {
-            enableScrolling: false,
-            placement: 'right',
-          },
-          before: () => {
-            // It's necessary to control the drawer tour event otherwise the internal state control will close it
-            this.drawer_running_tour = true
-            // We will open the drawer for the message
-            this.drawer = true
-          },
-        },
-        {
-          target: '#button-to-vehicle',
-          content: `Under the Vehicle menu, you can check the status of your autopilot, download logs from it,
-          set up video streams and even update its firmware!`,
-          params: {
-            enableScrolling: false,
-          },
-        },
-        {
-          target: '#button-to-tools',
-          content: `Here you can find all kinds of tools to improve your AirOS experience.
-          There are system-diagnosis tools, like network-speed tester and others, all under the Tools menu.`,
-          params: {
-            enableScrolling: false,
-          },
-        },
-        {
-          target: '#power-menu-button',
-          content: 'Here you can safely shut down or restart the running computer.',
-          params: {
-            enableScrolling: false,
-          },
-        },
-        {
-          target: '#settings-menu-button',
-          content: 'With the settings button, you can customize your AirOS experience.',
-          params: {
-            enableScrolling: false,
-          },
-        },
-        {
-          target: '#feature-request-button',
-          content: `Here you can get in touch with us, request new features, report bugs, interact with our
-          community, and more!`,
-          params: {
-            enableScrolling: false,
-          },
-        },
-        {
-          target: '#current-version',
-          content: `You can check the version of AirOS installed here. This version number is particularly important
-          when looking for help.`,
-          params: {
-            enableScrolling: false,
-          },
-        },
-        {
-          target: '#notifications-tray-menu-button',
-          content: 'Last but not least, you can find any event related to your system under the notifications menu.',
-          before: () => {
-            // The close vent will happen after the next tick of the state control
-            this.drawer_running_tour = false
-          },
-          params: {
-            enableScrolling: false,
-          },
-        },
-        {
-          target: '#tour-center-hook',
-          content: `That's it! Now we want you to enjoy your experience with AirOS! Also, don't forget to get in touch
-          if you need anything else to improve your journey! Happy exploring!`,
-          params: {
-            enableScrolling: false,
-          },
-        },
-      ]
     },
     git_info(): string {
       return import.meta.env.VITE_APP_GIT_DESCRIBE
