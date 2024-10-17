@@ -11,7 +11,7 @@ class Navigator(LinuxFlightController):
     manufacturer = "Airdroper"
 
     def __init__(self, **data: Any) -> None:
-        name = "CORE"
+        name = "Navigator"
         plat = Platform.Navigator
         if platform.machine() == "aarch64":
             name = "Navigator64"
