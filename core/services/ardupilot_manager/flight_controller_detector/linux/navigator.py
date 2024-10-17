@@ -8,7 +8,7 @@ from typedefs import Platform, Serial
 
 
 class Navigator(LinuxFlightController):
-    manufacturer = "Airdroper"
+    manufacturer = "Blue Robotics"
 
     def __init__(self, **data: Any) -> None:
         name = "Navigator"
