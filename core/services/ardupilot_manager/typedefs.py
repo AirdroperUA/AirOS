@@ -109,7 +109,7 @@ class Platform(str, Enum):
     Pixhawk6C = "Pixhawk6C"
     CubeOrange = "CubeOrange"
     GenericSerial = "GenericSerial"
-    Navigator = "navigator"
+    Navigator = "core"
     Navigator64 = "navigator64"
     Argonot = "argonot"
     SITL = get_sitl_platform_name(machine())

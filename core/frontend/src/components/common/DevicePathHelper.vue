@@ -46,7 +46,7 @@ enum BoardType {
   Rpi4B = 'Rpi4B',
   Rpi3B = 'Rpi3B',
   Rpi5 = 'Rpi5',
-  Navigator = 'Navigator',
+  Navigator = 'CORE',
   Unknown = 'Unknown'
 }
 
